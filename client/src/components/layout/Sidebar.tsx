@@ -13,7 +13,7 @@ import GoogleSignOutBtn from '../firebase/GoogleSignOutBtn';
 import Badge from './Badge';
 
 // Icons
-import {FiHome, FiCheckSquare, FiUsers, FiSettings, FiTool, FiChevronLeft} from 'react-icons/all';
+import {FiHome, FiCheckSquare, FiUsers, FiSettings, FiTool, FiHeart, FiChevronLeft} from 'react-icons/all';
 
 
 export default function Sidebar() {
@@ -57,6 +57,7 @@ export default function Sidebar() {
                         Classes <Badge className="ml-1">Beta</Badge>
                     </SidebarItem>
                     <SidebarItem to="/clubs" icon={FiUsers}>Clubs</SidebarItem>
+                    <SidebarItem to="/wellness" icon={FiHeart}>Wellness</SidebarItem>
                     <SidebarItem to="/utilities" icon={FiTool}>Utilities</SidebarItem>
                     <SidebarItem to="/settings" icon={FiSettings}>Settings</SidebarItem>
 

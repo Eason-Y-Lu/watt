@@ -7,6 +7,7 @@ import {GCalEvent} from './components/schedule/Event';
 
 // Layouts
 import AppLayout from './components/layout/AppLayout';
+import WellnessLayout from './components/wellness/WellnessLayout';
 import ResourcesLayout from './components/resources/ResourcesLayout';
 import UtilitiesLayout from './components/utilities/UtilitiesLayout';
 import SettingsLayout from './components/settings/SettingsLayout';
@@ -20,6 +21,8 @@ import Map from './pages/utilities/Map';
 import Calculator from './pages/utilities/Calculator';
 import Staff from './pages/utilities/Staff';
 import Courses from './pages/utilities/Courses';
+import Links from './pages/wellness/Links';
+import PhoneNumbers from './pages/wellness/PhoneNumbers';
 import Resources from './pages/utilities/Resources';
 import Appearance from './pages/settings/Appearance';
 import Features from './pages/settings/Features';
@@ -134,6 +137,10 @@ export default function App() {
                                 <Route path="materials" element={<Materials />} />
                             </Route>
                             <Route path="/clubs" element={<Clubs />} />
+                            <Route path="/wellness" element={<WellnessLayout />}>
+                                <Route index element={<Links />} />
+                                <Route path="phone-numbers" element={<PhoneNumbers />} />
+                            </Route>
                             <Route path="/utilities" element={<UtilitiesLayout />}>
                                 <Route index element={<Barcode />} />
                                 {/* <Route path="graphing`} element={<GraphingCalculator />}/> */}
